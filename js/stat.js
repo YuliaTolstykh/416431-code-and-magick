@@ -28,13 +28,11 @@ window.renderStatistics = function (ctx, names, times) {
   ctx.fillText('Список результатов:', 120, 60);
 
   var max = -1;
-  var maxIndex = -1;
 
-  for (var i = 0; i < times.length; i++) {
-    var time = times[i];
+  for (var j = 0; j < times.length; j++) {
+    var time = times[j];
     if (time > max) {
       max = time;
-      maxIndex = i;
     }
   }
 
